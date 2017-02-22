@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Angular 1.6 test application</title>
+</head>
+
+<body ng-app="app">
+  <div>
+    <h2>First Angular application</h2>
+  </div>
+  <div ng-controller="MainCtrl">
+    Welcome {{name}},
+    content will come sooooooooooooon !!!!!
+    <button ng-click="onSubmit()">Submit</button>
+    <div>
+      <input ng-model="msg" />
+      <p my-dctv >
+          {{msg | myUpperFilter }}
+      </p>
+    </div>
+  </div>
+</body>
+
+<script src="./scripts/libraries/angular.js"></script>
+<script src="./scripts/libraries/angular-route.js"></script>
+<script src="./scripts/main.js"></script>
+
+</html>
